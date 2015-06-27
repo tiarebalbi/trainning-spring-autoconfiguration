@@ -1,9 +1,14 @@
 package com.tiarebalbi.trainning.spring;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Configuration;
 
-@SpringBootApplication
+// Ignorando o a anotação para que não seja carregado automaticamente os componentes configurado
+//@SpringBootApplication
+@Configuration
+@EnableAutoConfiguration
 public class Application {
 
     public static void main(String[] args) {
